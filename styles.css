@@ -1,0 +1,138 @@
+body {
+  font-family: 'Pathway Extreme', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9dc;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+  font-family: 'Pacifico', cursive;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+}
+
+#logo {
+  height: 120px;
+}
+
+.container {
+  margin-top: 60px;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 50px;
+  padding: 10px;
+}
+
+.transaction-form {
+  margin-right: 20px;
+  grid-column: span 2;
+}
+
+.transaction-list {
+  grid-column: span 2;
+  margin-right: 20px;
+}
+
+.summary {
+  padding: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.transaction-item .delete-button {
+  background-color: #f44336;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.transaction-item.income {
+  color: #2ecc71;
+}
+
+.transaction-item.expense {
+  color: #e74c3c;
+}
+
+.summary p {
+  margin-bottom: 15px;
+}
+
+.netExp {
+  color: red;
+  font-weight: bolder;
+  font-size: larger;
+  padding: 3px;
+}
+
+h2 {
+  font-weight: bolder;
+}
+
+.netInc {
+  color: green;
+  font-weight: bolder;
+  font-size: larger;
+  padding: 3px;
+}
+
+.netBal {
+  font-size: x-large;
+  padding: 10px;
+  padding-left: 3px;
+}
